@@ -12,4 +12,8 @@ Proviamo sempre prima con dei console.log() per capire se stiamo ricevendo i dat
 \\ L'utente clicca su un bottone, quindi devo creare un event listener da dare al bottone, con il quale verrà generata la tabella del campo minato
     \\ il campo minato viene generato da un ciclo for
         \\ ogni voltaa che l'utente clicca su una cella, si colorerà di azzurro ed emetterà un messaggio in console con il numero della casella cliccata , 
-            
+
+            <!-- Generate Bomb Positions: The function generateUniqueBombs generates 16 unique random numbers between the specified range (1 to 100). The bomb positions are stored in a Set to ensure uniqueness.
+Check for Bomb Click: Inside the newGame function, the bombPositions array is checked to see if the clicked cell index is a bomb. If it is, an alert "lose" is shown, and the grid is cleared to end the game.
+Game Reset: Clicking the play button starts a new game by calling newGame.
+This setup ensures that the game resets each time the play button is clicked, and clicking on a bomb ends the game with an appropriate alert. -->
