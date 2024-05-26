@@ -37,10 +37,12 @@ section.grid >article.square{
     align-items: center;
     justify-content: center;
     font-size: 3rem;
+    color: white;
 
 }
 section.grid >article.square.active{
     background-color: red;
+    color: black;
 }
 section.grid >article.square.active.odd{
     width: calc(100% / 10);

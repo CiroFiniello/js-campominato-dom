@@ -25,6 +25,28 @@ function newGame(numberOfCells, containerElement) {
     }
 }
 
+function getRandomInt(min, max){
+    return Math.floor( Math.random() * ((max + 1) - min )) + min;
+}
+
+function getUniqueRandomInt(uninvitedNumbers, min , max){
+
+    if ( max - min > uninvitedNumbers.length){
+        return false;
+    }
+
+    let randomNumber;
+    let isFound = false;
+
+    while(!isFound){
+            randomNumber = getRandomInt(min, max);
+        if( uninvitedNumbers.includes(raandomNumber) !== false){
+            isFound = true;
+        }
+    }
+    return randomNumber;
+}
+
 play.addEventListener('click', function() {
         newGame(100, gridElement);
 
