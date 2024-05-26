@@ -41,7 +41,7 @@ section.grid >article.square{
 
 }
 section.grid >article.square.active{
-    background-color: red;
+    background-color: white;
     color: black;
 }
 section.grid >article.square.active.odd{
@@ -66,4 +66,10 @@ footer{
 }
 #play{
     background-color: aqua;
+}
+.square.bomb{
+    background-color: red;
+}
+.square.revealed{
+    background-color: lightgray;
 }
